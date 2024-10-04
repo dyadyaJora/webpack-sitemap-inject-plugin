@@ -1,3 +1,9 @@
+# Temporary files
+/tmp
+
+# Editor directories
+.vscode
+
 # Logs
 logs
 *.log
