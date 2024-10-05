@@ -1,14 +1,25 @@
 {
-  "name": "webpack-sitemap-inject-plugin",
-  "version": "0.0.1",
+  "name": "@dyadyajora/webpack-sitemap-inject-plugin",
+  "version": "1.0.0",
   "description": "Wepback plugin for customizing and regeneration of sitemap.xml",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "author": "George Kindra (https://github.com/dyadyaJora)",
+  "license": "ISC",
+  "homepage": "https://github.com/dyadyaJora/webpack-sitemap-inject-plugin",
+  "repository": {
+		"type": "git",
+		"url": "git+https://github.com/dyadyaJora/webpack-sitemap-inject-plugin.git"
+	},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --config examples/webpack.config.js"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "copy-webpack-plugin": "^12.0.2",
     "webpack": "^5.95.0",
