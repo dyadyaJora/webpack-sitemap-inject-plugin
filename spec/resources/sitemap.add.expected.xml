@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourwebsite.com/old-page</loc>
+    <loc>https://yourwebsite.com/first</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/</loc>
+    <loc>https://yourwebsite.com/second</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>2</priority>
+    <loc>https://yourwebsite.com/third</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
