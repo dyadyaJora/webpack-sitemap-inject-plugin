@@ -1,6 +1,6 @@
 {
   "name": "@dyadyajora/webpack-sitemap-inject-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wepback plugin for customizing and regeneration of sitemap.xml",
   "main": "index.js",
   "files": [
