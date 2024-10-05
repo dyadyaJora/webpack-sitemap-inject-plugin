@@ -1,5 +1,7 @@
 # webpack-sitemap-inject-plugin
 
+[![NPM Version](https://img.shields.io/npm/v/webpack-sitemap-inject-plugin)](https://www.npmjs.com/package/webpack-sitemap-inject-plugin)
+
 ## Intro
 
 One more webpack plugin for postprocessing of yours `sitemap.xml` file.
