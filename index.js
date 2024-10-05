@@ -8,9 +8,8 @@ class WebpackSitemapInjectPlugin {
     this.sitemapOutputPath = options.sitemapOutputPath || 'sitemap.xml';
     this.baseUrl = options.baseUrl || 'https://example.com';
     this.routes = options.routes || [];
-    this.dynamicRoutes = options.dynamicRoutes || {};
     this.tabSize = options.tabSize || 2;
-    this.fillTimestamp = options.fillTimestamp || true;
+    this.fillTimestamp = !!options.fillTimestamp;
     this.timestamp = new Date().toISOString();
   }
 
@@ -26,6 +25,7 @@ class WebpackSitemapInjectPlugin {
       }
 
       const sitemapContent = fs.readFileSync(sitemapFilePath, 'utf-8');
+      const firstLine = sitemapContent.split('\n')[0];
 
       xml2js.parseString(sitemapContent, (err, result) => {
         if (err) {
@@ -42,7 +42,7 @@ class WebpackSitemapInjectPlugin {
         result.urlset.url = [...urlset, ...newRoutes];
 
         const builder = new xml2js.Builder({ headless: true, renderOpts: { pretty: true, indent: ' '.repeat(this.tabSize) } });
-        const updatedSitemapContent = builder.buildObject(result);
+        const updatedSitemapContent = firstLine + '\n' + builder.buildObject(result);
 
         fs.writeFileSync(sitemapOutputFilePath, updatedSitemapContent);
 
