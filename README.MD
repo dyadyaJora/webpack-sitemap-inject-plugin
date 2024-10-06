@@ -8,14 +8,14 @@ One more webpack plugin for postprocessing of yours `sitemap.xml` file.
 
 ## Installation
 
-    npm install --save-dev @dyadyajora/webpack-sitemap-inject-plugin
+    npm install --save-dev webpack-sitemap-inject-plugin
 
 ## How to use
 
 In your `webpack.config.js` you should add `WebpackSitemapInjectPlugin` definition with required options:
 
 ```js
-const WebpackSitemapInjectPlugin = require("@dyadyajora/webpack-sitemap-inject-plugin");
+const WebpackSitemapInjectPlugin = require("webpack-sitemap-inject-plugin");
 
 module.exports = {
   // ....
