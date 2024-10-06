@@ -1,10 +1,10 @@
 # webpack-sitemap-inject-plugin
 
 [![NPM Version](https://img.shields.io/npm/v/webpack-sitemap-inject-plugin)](https://www.npmjs.com/package/webpack-sitemap-inject-plugin)
-
+[![Node.js Package](https://github.com/dyadyaJora/webpack-sitemap-inject-plugin/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/dyadyaJora/webpack-sitemap-inject-plugin/actions/workflows/npm-publish.yml)
 ## Intro
 
-One more webpack plugin for postprocessing of yours `sitemap.xml` file.
+One more webpack plugin for postprocessing of yours `sitemap.xml` file. Allows to add custom elements to already existing `sitemap.xml` over webpack.
 
 ## Installation
 
