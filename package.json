@@ -6,6 +6,12 @@
   "files": [
     "index.js"
   ],
+  "keywords": [
+    "webpack",
+    "plugin",
+    "sitemap",
+    "webpack-sitemap-inject-plugin"
+  ],
   "author": "George Kindra (https://github.com/dyadyaJora)",
   "license": "ISC",
   "homepage": "https://github.com/dyadyaJora/webpack-sitemap-inject-plugin",
